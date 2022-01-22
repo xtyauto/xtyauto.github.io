@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="output.css" rel="stylesheet">
+        <script src="calculator.js"></script>
+    </head>
+
+    <!--  -->
+
+    <div class="m-10">
+        <form class="w-full max-w-lg ring-2 p-2 ring-neutral-500 leading-8 text-lg">
+
+            <div class="md:flex md:items-center">
+                <label class="block text-neutral-900 ">
+                    Downpayment
+                </label>
+                <span class="whitespace-pre"> : </span>
+                <input class="w-16 bg-stone-200 border-2 px-0.5 py-0.5 border-stone-200 rounded text-gray-700 leading-tight focus:outline-none focus:bg-stone-50 focus:border-amber-500" id="principal" type="number" value="3.5">
+                <span class="whitespace-pre">%</span>
+            </div>
+
+            <div class="md:flex md:items-center">
+                <label class="block text-neutral-900 ">
+                    Interest
+                </label>
+                <span class="whitespace-pre"> : </span>
+                <input class="w-16 bg-stone-200 border-2 px-0.5 py-0.5 border-stone-200 rounded text-gray-700 leading-tight focus:outline-none focus:bg-stone-50 focus:border-amber-500" id="principal" type="number" value="2.5">
+                <span class="whitespace-pre">%</span>
+            </div>
+
+            <div class="md:flex md:items-center">
+                <label class="block text-neutral-900 ">
+                    Principal
+                </label>
+                <span class="whitespace-pre"> : $</span>
+                <input class="w-16 bg-stone-200 border-2 px-0.5 py-0.5 border-stone-200 rounded text-gray-700 leading-tight focus:outline-none focus:bg-stone-50 focus:border-amber-500" id="principal" type="number" value="500">
+                <span class="whitespace-pre">k</span>
+            </div>
+
+            <div id="unit1" class="md:flex md:items-center p-2 m-2 border-b-2">
+                <label name="unit-name">Unit#1</label>
+                <span class="whitespace-pre"> </span>
+                <label name="item-1">Rent</label>
+                <span class="whitespace-pre"> : $</span>
+                <input class="w-12 bg-stone-200 border-2 px-0.5 py-0.5 border-stone-200 rounded text-gray-700 leading-tight focus:outline-none focus:bg-stone-50 focus:border-amber-500" id="principal" type="number" value="19">
+                <label>00</label>
+                <span class="w-full"></span>
+                <img name="pick-house" class="w-8 rounded bg-gray-300 p-1 cursor-pointer" src="house-off.png" />
+                <span class="w-4"></span>
+                <button name="remove-unit" class="text-sm shadow bg-red-200 focus:shadow-outline focus:outline-none py-1 px-1 rounded whitespace-pre" type="button">Remove</button>
+            </div>
+
+            <div id="garage-model" class="md:hidden md:items-center p-2 m-2 border-b-2">
+                <label name="garage-name">Garage#1</label>
+                <span class="whitespace-pre"> </span>
+                <label name="item-1">Rent</label>
+                <span class="whitespace-pre"> : $</span>
+                <input class="w-10 bg-stone-200 border-2 px-0.5 py-0.5 border-stone-200 rounded text-gray-700 leading-tight focus:outline-none focus:bg-stone-50 focus:border-amber-500" id="principal" type="number" value="2">
+                <label>00</label>
+                <span class="w-full"></span>
+                <button name="remove-garage" class="text-sm shadow bg-red-200 focus:shadow-outline focus:outline-none py-1 px-1 rounded whitespace-pre" type="button">Remove</button>
+            </div>
+
+            <div id="post-units" class="md:flex text-sm">
+                <span class="w-full"></span>
+                <button name="add-unit" class="bg-amber-50 shadow focus:shadow-outline focus:outline-none py-1 px-1 rounded whitespace-pre" type="button">Add Unit</button>
+                <span class="w-4"></span>
+                <button name="add-garage" class="bg-amber-50 shadow focus:shadow-outline focus:outline-none py-1 px-1 rounded whitespace-pre" type="button">Add Garage</button>
+            </div>
+
+            <input class="bg-red-500 border-red-500" type="range" min="0" max="100" value="10" step="10">
+        </form>
+    </div>
+
+
+    <!--  -->
+    
+
+</html>
